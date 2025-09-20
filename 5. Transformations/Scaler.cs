@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class Scale : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _scaleSpeed;
 
-    void Update()
+    private void Update()
     {
-        ScaleCapsule();
+        ScaleUniformly();
     }
 
-    private void ScaleCapsule()
+    private void ScaleUniformly()
     {
         transform.localScale += Vector3.one * _scaleSpeed * Time.deltaTime;
     }
