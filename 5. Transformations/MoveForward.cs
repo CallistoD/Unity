@@ -14,8 +14,6 @@ public class MoveForward : MonoBehaviour
 
     private void MoveSphereForward()
     {
-        Debug.Log("START: MoveSphereForward");
-
         transform.position += Vector3.right * _movementSpeed * Time.deltaTime;
     }
 }
