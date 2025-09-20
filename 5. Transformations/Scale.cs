@@ -11,8 +11,6 @@ public class Scale : MonoBehaviour
 
     private void ScaleCapsule()
     {
-        Debug.Log("START: ScaleCapsule");
-
         transform.localScale += Vector3.one * _scaleSpeed * Time.deltaTime;
     }
 }
